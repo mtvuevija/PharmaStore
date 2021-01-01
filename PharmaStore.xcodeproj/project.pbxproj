@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2405EA974CCC0AC7E46ED10D /* Pods_PharmaStore_PharmaStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B902524F52601294FEAEBC /* Pods_PharmaStore_PharmaStoreUITests.framework */; };
+		8D25FD019A7ABB2E282ADEF0 /* Pods_PharmaStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE4865D4EB66CAF8DA3468E /* Pods_PharmaStore.framework */; };
+		C047347C2596D54300710509 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = C047347B2596D54300710509 /* tessdata */; };
+		C05D640B2593E219009DE251 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C05D640A2593E219009DE251 /* GoogleService-Info.plist */; };
+		C091761025968E1500CB1A4C /* AddNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091760F25968E1500CB1A4C /* AddNewController.swift */; };
+		C0C9870425943A5200CFCDF5 /* SignUp&In.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9870325943A5100CFCDF5 /* SignUp&In.swift */; };
+		C0F0D636258E976300FE8B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F0D635258E976300FE8B90 /* AppDelegate.swift */; };
+		C0F0D638258E976300FE8B90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F0D637258E976300FE8B90 /* SceneDelegate.swift */; };
+		C0F0D63A258E976300FE8B90 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F0D639258E976300FE8B90 /* HomePageController.swift */; };
+		C0F0D63F258E976500FE8B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F0D63E258E976500FE8B90 /* Assets.xcassets */; };
+		C0F0D642258E976500FE8B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F0D640258E976500FE8B90 /* LaunchScreen.storyboard */; };
+		C0F0D64D258E976500FE8B90 /* PharmaStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F0D64C258E976500FE8B90 /* PharmaStoreTests.swift */; };
+		C0F0D658258E976500FE8B90 /* PharmaStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F0D657258E976500FE8B90 /* PharmaStoreUITests.swift */; };
+		E465463B7DCE7E1A69914C32 /* Pods_PharmaStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FCC105B769D2980C3E13F2 /* Pods_PharmaStoreTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0F0D649258E976500FE8B90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F0D62A258E976300FE8B90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F0D631258E976300FE8B90;
+			remoteInfo = PharmaStore;
+		};
+		C0F0D654258E976500FE8B90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F0D62A258E976300FE8B90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F0D631258E976300FE8B90;
+			remoteInfo = PharmaStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005884337FBB69383087C7CD /* Pods-PharmaStore-PharmaStoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmaStore-PharmaStoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		16059779DA2F17673F0BE68F /* Pods-PharmaStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmaStore.release.xcconfig"; path = "Target Support Files/Pods-PharmaStore/Pods-PharmaStore.release.xcconfig"; sourceTree = "<group>"; };
+		27C85200F879842E5DFF95DB /* Pods-PharmaStore-PharmaStoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmaStore-PharmaStoreUITests.release.xcconfig"; path = "Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39FCC105B769D2980C3E13F2 /* Pods_PharmaStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmaStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E00DEA284142CACFA66AAF6 /* Pods-PharmaStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmaStore.debug.xcconfig"; path = "Target Support Files/Pods-PharmaStore/Pods-PharmaStore.debug.xcconfig"; sourceTree = "<group>"; };
+		53B8634BE433ED1CC489FFF8 /* Pods-PharmaStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmaStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-PharmaStoreTests/Pods-PharmaStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C047347B2596D54300710509 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		C05D640A2593E219009DE251 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C091760F25968E1500CB1A4C /* AddNewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewController.swift; sourceTree = "<group>"; };
+		C0C9870325943A5100CFCDF5 /* SignUp&In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SignUp&In.swift"; path = "/Users/tiffanyla/Documents/Apps/PharmaStore/PharmaStore/SignUp&In.swift"; sourceTree = "<absolute>"; };
+		C0F0D632258E976300FE8B90 /* PharmaStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PharmaStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F0D635258E976300FE8B90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0F0D637258E976300FE8B90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C0F0D639258E976300FE8B90 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		C0F0D63E258E976500FE8B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0F0D641258E976500FE8B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0F0D643258E976500FE8B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F0D648258E976500FE8B90 /* PharmaStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PharmaStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F0D64C258E976500FE8B90 /* PharmaStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaStoreTests.swift; sourceTree = "<group>"; };
+		C0F0D64E258E976500FE8B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F0D653258E976500FE8B90 /* PharmaStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PharmaStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F0D657258E976500FE8B90 /* PharmaStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaStoreUITests.swift; sourceTree = "<group>"; };
+		C0F0D659258E976500FE8B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF67492882A05373F7861576 /* Pods-PharmaStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmaStoreTests.release.xcconfig"; path = "Target Support Files/Pods-PharmaStoreTests/Pods-PharmaStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0B902524F52601294FEAEBC /* Pods_PharmaStore_PharmaStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmaStore_PharmaStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE4865D4EB66CAF8DA3468E /* Pods_PharmaStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmaStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0F0D62F258E976300FE8B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D25FD019A7ABB2E282ADEF0 /* Pods_PharmaStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F0D645258E976500FE8B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E465463B7DCE7E1A69914C32 /* Pods_PharmaStoreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F0D650258E976500FE8B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2405EA974CCC0AC7E46ED10D /* Pods_PharmaStore_PharmaStoreUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AAC4D244BD8B1381205273C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBE4865D4EB66CAF8DA3468E /* Pods_PharmaStore.framework */,
+				F0B902524F52601294FEAEBC /* Pods_PharmaStore_PharmaStoreUITests.framework */,
+				39FCC105B769D2980C3E13F2 /* Pods_PharmaStoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D4F2D62F4B2DAD275644782 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E00DEA284142CACFA66AAF6 /* Pods-PharmaStore.debug.xcconfig */,
+				16059779DA2F17673F0BE68F /* Pods-PharmaStore.release.xcconfig */,
+				005884337FBB69383087C7CD /* Pods-PharmaStore-PharmaStoreUITests.debug.xcconfig */,
+				27C85200F879842E5DFF95DB /* Pods-PharmaStore-PharmaStoreUITests.release.xcconfig */,
+				53B8634BE433ED1CC489FFF8 /* Pods-PharmaStoreTests.debug.xcconfig */,
+				EF67492882A05373F7861576 /* Pods-PharmaStoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0F0D629258E976300FE8B90 = {
+			isa = PBXGroup;
+			children = (
+				C0F0D634258E976300FE8B90 /* PharmaStore */,
+				C0F0D64B258E976500FE8B90 /* PharmaStoreTests */,
+				C0F0D656258E976500FE8B90 /* PharmaStoreUITests */,
+				C0F0D633258E976300FE8B90 /* Products */,
+				4AAC4D244BD8B1381205273C /* Frameworks */,
+				9D4F2D62F4B2DAD275644782 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C0F0D633258E976300FE8B90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0F0D632258E976300FE8B90 /* PharmaStore.app */,
+				C0F0D648258E976500FE8B90 /* PharmaStoreTests.xctest */,
+				C0F0D653258E976500FE8B90 /* PharmaStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F0D634258E976300FE8B90 /* PharmaStore */ = {
+			isa = PBXGroup;
+			children = (
+				C047347B2596D54300710509 /* tessdata */,
+				C05D640A2593E219009DE251 /* GoogleService-Info.plist */,
+				C0F0D635258E976300FE8B90 /* AppDelegate.swift */,
+				C0F0D637258E976300FE8B90 /* SceneDelegate.swift */,
+				C0F0D639258E976300FE8B90 /* HomePageController.swift */,
+				C091760F25968E1500CB1A4C /* AddNewController.swift */,
+				C0C9870325943A5100CFCDF5 /* SignUp&In.swift */,
+				C0F0D63E258E976500FE8B90 /* Assets.xcassets */,
+				C0F0D640258E976500FE8B90 /* LaunchScreen.storyboard */,
+				C0F0D643258E976500FE8B90 /* Info.plist */,
+			);
+			path = PharmaStore;
+			sourceTree = "<group>";
+		};
+		C0F0D64B258E976500FE8B90 /* PharmaStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F0D64C258E976500FE8B90 /* PharmaStoreTests.swift */,
+				C0F0D64E258E976500FE8B90 /* Info.plist */,
+			);
+			path = PharmaStoreTests;
+			sourceTree = "<group>";
+		};
+		C0F0D656258E976500FE8B90 /* PharmaStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F0D657258E976500FE8B90 /* PharmaStoreUITests.swift */,
+				C0F0D659258E976500FE8B90 /* Info.plist */,
+			);
+			path = PharmaStoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0F0D631258E976300FE8B90 /* PharmaStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F0D65C258E976500FE8B90 /* Build configuration list for PBXNativeTarget "PharmaStore" */;
+			buildPhases = (
+				BAEFF26484BC948DA8526873 /* [CP] Check Pods Manifest.lock */,
+				62E7CC1DC78095EE382756C4 /* [CP] Prepare Artifacts */,
+				C0F0D62E258E976300FE8B90 /* Sources */,
+				C0F0D62F258E976300FE8B90 /* Frameworks */,
+				C0F0D630258E976300FE8B90 /* Resources */,
+				EBC6B38BCAC773EACEDF3C6B /* [CP] Embed Pods Frameworks */,
+				B3015D154F86B83FB262C13A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PharmaStore;
+			productName = PharmaStore;
+			productReference = C0F0D632258E976300FE8B90 /* PharmaStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0F0D647258E976500FE8B90 /* PharmaStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F0D65F258E976500FE8B90 /* Build configuration list for PBXNativeTarget "PharmaStoreTests" */;
+			buildPhases = (
+				F0B1A048B1C2CFB1A8C6B8F6 /* [CP] Check Pods Manifest.lock */,
+				C0F0D644258E976500FE8B90 /* Sources */,
+				C0F0D645258E976500FE8B90 /* Frameworks */,
+				C0F0D646258E976500FE8B90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F0D64A258E976500FE8B90 /* PBXTargetDependency */,
+			);
+			name = PharmaStoreTests;
+			productName = PharmaStoreTests;
+			productReference = C0F0D648258E976500FE8B90 /* PharmaStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0F0D652258E976500FE8B90 /* PharmaStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F0D662258E976500FE8B90 /* Build configuration list for PBXNativeTarget "PharmaStoreUITests" */;
+			buildPhases = (
+				E66A712CADC549DA1AB1924B /* [CP] Check Pods Manifest.lock */,
+				EF4CD73E9F0C4DDB02BEF365 /* [CP] Prepare Artifacts */,
+				C0F0D64F258E976500FE8B90 /* Sources */,
+				C0F0D650258E976500FE8B90 /* Frameworks */,
+				C0F0D651258E976500FE8B90 /* Resources */,
+				7925600FA230506FC7C72745 /* [CP] Embed Pods Frameworks */,
+				EA39D10CF22FFA1D71E1E7B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F0D655258E976500FE8B90 /* PBXTargetDependency */,
+			);
+			name = PharmaStoreUITests;
+			productName = PharmaStoreUITests;
+			productReference = C0F0D653258E976500FE8B90 /* PharmaStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0F0D62A258E976300FE8B90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Evija Digital";
+				TargetAttributes = {
+					C0F0D631258E976300FE8B90 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					C0F0D647258E976500FE8B90 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C0F0D631258E976300FE8B90;
+					};
+					C0F0D652258E976500FE8B90 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C0F0D631258E976300FE8B90;
+					};
+				};
+			};
+			buildConfigurationList = C0F0D62D258E976300FE8B90 /* Build configuration list for PBXProject "PharmaStore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0F0D629258E976300FE8B90;
+			productRefGroup = C0F0D633258E976300FE8B90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0F0D631258E976300FE8B90 /* PharmaStore */,
+				C0F0D647258E976500FE8B90 /* PharmaStoreTests */,
+				C0F0D652258E976500FE8B90 /* PharmaStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0F0D630258E976300FE8B90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F0D642258E976500FE8B90 /* LaunchScreen.storyboard in Resources */,
+				C047347C2596D54300710509 /* tessdata in Resources */,
+				C05D640B2593E219009DE251 /* GoogleService-Info.plist in Resources */,
+				C0F0D63F258E976500FE8B90 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F0D646258E976500FE8B90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F0D651258E976500FE8B90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62E7CC1DC78095EE382756C4 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7925600FA230506FC7C72745 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3015D154F86B83FB262C13A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAEFF26484BC948DA8526873 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PharmaStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E66A712CADC549DA1AB1924B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PharmaStore-PharmaStoreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA39D10CF22FFA1D71E1E7B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC6B38BCAC773EACEDF3C6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmaStore/Pods-PharmaStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF4CD73E9F0C4DDB02BEF365 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmaStore-PharmaStoreUITests/Pods-PharmaStore-PharmaStoreUITests-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B1A048B1C2CFB1A8C6B8F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PharmaStoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0F0D62E258E976300FE8B90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C091761025968E1500CB1A4C /* AddNewController.swift in Sources */,
+				C0F0D63A258E976300FE8B90 /* HomePageController.swift in Sources */,
+				C0C9870425943A5200CFCDF5 /* SignUp&In.swift in Sources */,
+				C0F0D636258E976300FE8B90 /* AppDelegate.swift in Sources */,
+				C0F0D638258E976300FE8B90 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F0D644258E976500FE8B90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F0D64D258E976500FE8B90 /* PharmaStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F0D64F258E976500FE8B90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F0D658258E976500FE8B90 /* PharmaStoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0F0D64A258E976500FE8B90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F0D631258E976300FE8B90 /* PharmaStore */;
+			targetProxy = C0F0D649258E976500FE8B90 /* PBXContainerItemProxy */;
+		};
+		C0F0D655258E976500FE8B90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F0D631258E976300FE8B90 /* PharmaStore */;
+			targetProxy = C0F0D654258E976500FE8B90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0F0D640258E976500FE8B90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F0D641258E976500FE8B90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0F0D65A258E976500FE8B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0F0D65B258E976500FE8B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0F0D65D258E976500FE8B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E00DEA284142CACFA66AAF6 /* Pods-PharmaStore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JWF9M5F83;
+				INFOPLIST_FILE = PharmaStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evijadigital.PharmaStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0F0D65E258E976500FE8B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16059779DA2F17673F0BE68F /* Pods-PharmaStore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JWF9M5F83;
+				INFOPLIST_FILE = PharmaStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evijadigital.PharmaStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0F0D660258E976500FE8B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B8634BE433ED1CC489FFF8 /* Pods-PharmaStoreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PharmaStoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evijadigital.PharmaStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PharmaStore.app/PharmaStore";
+			};
+			name = Debug;
+		};
+		C0F0D661258E976500FE8B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF67492882A05373F7861576 /* Pods-PharmaStoreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PharmaStoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evijadigital.PharmaStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PharmaStore.app/PharmaStore";
+			};
+			name = Release;
+		};
+		C0F0D663258E976500FE8B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005884337FBB69383087C7CD /* Pods-PharmaStore-PharmaStoreUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PharmaStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evijadigital.PharmaStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PharmaStore;
+			};
+			name = Debug;
+		};
+		C0F0D664258E976500FE8B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C85200F879842E5DFF95DB /* Pods-PharmaStore-PharmaStoreUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PharmaStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evijadigital.PharmaStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PharmaStore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0F0D62D258E976300FE8B90 /* Build configuration list for PBXProject "PharmaStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F0D65A258E976500FE8B90 /* Debug */,
+				C0F0D65B258E976500FE8B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F0D65C258E976500FE8B90 /* Build configuration list for PBXNativeTarget "PharmaStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F0D65D258E976500FE8B90 /* Debug */,
+				C0F0D65E258E976500FE8B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F0D65F258E976500FE8B90 /* Build configuration list for PBXNativeTarget "PharmaStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F0D660258E976500FE8B90 /* Debug */,
+				C0F0D661258E976500FE8B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F0D662258E976500FE8B90 /* Build configuration list for PBXNativeTarget "PharmaStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F0D663258E976500FE8B90 /* Debug */,
+				C0F0D664258E976500FE8B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0F0D62A258E976300FE8B90 /* Project object */;
+}
