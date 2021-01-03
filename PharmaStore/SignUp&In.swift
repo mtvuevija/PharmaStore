@@ -1,9 +1,6 @@
 //
 //  SignUp.swift
 //  
-//
-//  Created by Michael Vu on 12/23/20.
-//
 
 import UIKit
 import Firebase

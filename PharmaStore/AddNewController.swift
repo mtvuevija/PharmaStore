@@ -1,10 +1,6 @@
 //
 //  AddNewController.swift
 //  PharmaStore
-//
-//  Created by Michael Vu
-//  Copyright © 2020 Evija Digital. All rights reserved.
-//
 
 import UIKit
 import Firebase
@@ -26,7 +22,7 @@ class AddNewController: UIViewController, UIImagePickerControllerDelegate & UINa
     var medName: UITextField?
     var medInstruction: UITextView?
     var imageText = ""
-    let suffixes = ["cillin", "olol"]
+    let suffixes = ["cillin", "olol", "afil", "asone", "bicin", "bital", "caine", "cycline", "dazole", "dipine", "dronate", "eprazole", "fenac", "floxacin", "gliptin", "glitazone", "iramine", "lamide", "mab", "mustine", "mycin", "nacin", "nazole", "olone", "onide", "oprazole", "phylline", "pril", "profen", "ridone", "tinib", "vir", "sin", "tine"]
     let times = ["hour", "daily", "day", "week"]
     
     //var medName = ""
@@ -99,9 +95,18 @@ class AddNewController: UIViewController, UIImagePickerControllerDelegate & UINa
         selectCamera.setTitleColor(.black, for: .normal)
         selectCamera.addTarget(self, action: #selector(selectC), for: .touchUpInside)
         
+        let cancelButton = UIButton()
+        cancelButton.translatesAutoresizingMaskIntoConstraints = false
+        cancelButton.setTitle("Cancel", for: .normal)
+        cancelButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        cancelButton.titleLabel?.numberOfLines = 1
+        cancelButton.setTitleColor(.red, for: .normal)
+        cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
+        
         stackView!.addArrangedSubview(camImage)
         stackView!.addArrangedSubview(selectPhoto)
         stackView!.addArrangedSubview(selectCamera)
+        stackView!.addArrangedSubview(cancelButton)
         //stackView!.addArrangedSubview(activityView!)
         
         NSLayoutConstraint.activate([
@@ -127,7 +132,14 @@ class AddNewController: UIViewController, UIImagePickerControllerDelegate & UINa
         medName!.layer.borderWidth = 5
         medName!.heightAnchor.constraint(equalToConstant: 60).isActive = true
         medName!.textAlignment = .center
-        medName!.keyboardType = UIKeyboardType.numberPad
+        
+        let toolbar:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0,  width: self.view.frame.size.width, height: 30))
+        let flexSpace = UIBarButtonItem(barButtonSystemItem:    .flexibleSpace, target: nil, action: nil)
+        let doneBtn: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(endEditing))
+        toolbar.setItems([flexSpace, doneBtn], animated: false)
+        toolbar.sizeToFit()
+        medName!.inputAccessoryView = toolbar
+        //medInstruction!.inputAccessoryView = toolbar
         
         let instruction = UILabel()
         instruction.text = "Drug Dosage"
@@ -143,7 +155,7 @@ class AddNewController: UIViewController, UIImagePickerControllerDelegate & UINa
         medInstruction!.layer.borderWidth = 5
         medInstruction!.heightAnchor.constraint(equalToConstant: 60).isActive = true
         medInstruction!.textAlignment = .center
-        medInstruction!.keyboardType = UIKeyboardType.numberPad
+        medInstruction!.backgroundColor = .white
         
         let addConfirm = UIButton()
         addConfirm.translatesAutoresizingMaskIntoConstraints = false
@@ -170,6 +182,15 @@ class AddNewController: UIViewController, UIImagePickerControllerDelegate & UINa
         stackView3!.setCustomSpacing(20, after: medName!)
         stackView3!.setCustomSpacing(10, after: instruction)
         stackView3!.setCustomSpacing(20, after: medInstruction!)
+    }
+    
+    @objc func endEditing() {
+        view.endEditing(true)
+    }
+    
+    @objc func cancel() {
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        self.navigationController?.pushViewController(HomePageController(), animated: true)
     }
     
     @objc func selectP() {
@@ -211,7 +232,8 @@ class AddNewController: UIViewController, UIImagePickerControllerDelegate & UINa
                     print((err?.localizedDescription)!)
                     return
                 }
-                self.dismiss(animated: true)
+                self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+                self.navigationController?.pushViewController(HomePageController(), animated: true)
             }
         }
         print("send")
@@ -260,7 +282,7 @@ class AddNewController: UIViewController, UIImagePickerControllerDelegate & UINa
                 if index != -1 {
                     index += suf.count
                     for i in (0..<index).reversed() {
-                        if imageText[i] == " " {
+                        if imageText[i] == " " || imageText[i] == "\n"{
                             self.medName!.text = String(imageText[i+1..<index])
                             break
                         }

@@ -1,10 +1,6 @@
 //
 //  SceneDelegate.swift
 //  PharmaStore
-//
-//  Created by Tiffany La on 12/19/20.
-//  Copyright © 2020 Evija Digital. All rights reserved.
-//
 
 import UIKit
 import Firebase
